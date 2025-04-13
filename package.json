@@ -1,0 +1,35 @@
+{
+  "name": "files-is-now-saas",
+  "version": "1.0.0",
+  "description": "Files is now a SaaS solution for sending or receiving files over the internet. It is open-source under the GPLv3 license.",
+  "main": "main.js",
+  "type": "commonjs",
+  "scripts": {
+    "build-js": "browserify ./front-end/javascript/index.js -o ./front-end/index.js",
+    "build-css": "sass ./front-end/sass/index.scss -o ./front-end/style.css",
+    "build-web": "npm run build-js && npm run build-css",
+    "start": "node ./main.js",
+    "devStart": "nodemon ./main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/null-gman/files-is-now-saas.git"
+  },
+  "keywords": [
+    "node-js",
+    "saas"
+  ],
+  "author": "https://github.com/null-gman",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/null-gman/files-is-now-saas/issues"
+  },
+  "homepage": "https://github.com/null-gman/files-is-now-saas#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "browserify": "^17.0.1",
+    "sass": "^1.86.3"
+  }
+}
